@@ -12,7 +12,7 @@ from fake_useragent import UserAgent
 
 ua = UserAgent
 
-client = gspread.service_account('Tests/gs_credentials.json')
+client = gspread.service_account('Shadow_Root/Tests/gs_credentials.json')
 working_sheet = client.open_by_url(
     'https://docs.google.com/spreadsheets/d/1fRi9qAdb-E-xAY_jQiMdjjEsN1xZZdxK6865V-Ck6RE/edit#gid=0')
 wb1 = working_sheet.get_worksheet(1)
