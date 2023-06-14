@@ -59,7 +59,7 @@ def test_cicle(driver, ):
                     driver.get(url)
                     time.sleep(5)
                     try:
-                        driver.find_element(By.ID, ID).shadow_root.find_element(By.CSS_SELECTOR, popup).click()
+                        driver.find_element(By.ID, ID).shadow_root.find_element(By.CLASS_NAME, popup).click()
                         time.sleep(5)
                         driver.execute_script("scrollBy(0,550);")
                         try:
